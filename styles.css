@@ -93,3 +93,24 @@ a:hover{text-decoration:underline}
 /* Footer */
 .footer{padding:1rem 0;border-top:1px solid var(--line);background:#0e0e0e}
 -top:1px solid #262626;background:#0e0e0e}
+/* Watermark logo in hero background */
+.hero {
+  position: relative;
+  padding: 8rem 0 5rem;
+  background: linear-gradient(180deg, #121212, #0f0f0f);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: url("Pioneer 4.svg") no-repeat center center;
+  background-size: contain;
+  opacity: 0.05; /* adjust strength of watermark */
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* keeps it unclickable */
+}
