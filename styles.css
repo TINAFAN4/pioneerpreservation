@@ -50,8 +50,13 @@ a:hover{text-decoration:underline}
 /* Buttons */
 .btn{display:inline-block;background:var(--brand);color:#111;padding:.8rem 1.1rem;border-radius:.5rem;font-weight:700;border:0;box-shadow:var(--shadow)}
 .btn:hover{filter:brightness(1.05)}
-.btn.ghost{background:transparent;color:var(--brand);border:2px solid var(--brand);box-shadow:none}
-.btn.small{padding:.5rem .8rem;font-size:.9rem;border-radius:.4rem}
+.btn,
+.btn:hover {
+  color: #000; /* black text, change if needed */
+  background-color: #ffcc33; /* your yellow button color */
+  border: 1px solid #ffcc33;
+}
+
 
 /* Hero */
 .hero{position:relative;padding:8rem 0 5rem;background:linear-gradient(180deg,#121212,#0f0f0f)}
